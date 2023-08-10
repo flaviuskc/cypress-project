@@ -7,3 +7,9 @@ Cypress.Commands.add('writeInput', (selector, text) => {
 Cypress.Commands.add('getButton', selector => {
     cy.get(`[data-test="${selector}"]`).click()
 })
+
+Cypress.Commands.add('login', (user,password) => {
+    cy.writeInput('loginUserName', user)
+    cy.writeInput('loginPassword', password)
+    cy.getButton('loginBtn')
+})
