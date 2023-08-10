@@ -7,7 +7,7 @@ class RegisterNewUserTest {
   }
 
   constructor(){
-    this.data = require('../fixtures/fakeData.json')
+    this.data = require('../fixtures/fakeData')
   }
 
   registerCorrectly(){
@@ -28,6 +28,7 @@ class RegisterNewUserTest {
   }
 }
 
+const users = require('../fixtures/users')
 const registerNewUserTest = new RegisterNewUserTest()
 
 describe('register user page', () => {
@@ -35,9 +36,21 @@ describe('register user page', () => {
     cy.visit('/')
     cy.get('[data-test="register"]').click()
   })
+
+  users.forEach(user => {
+    it('should visit register page and create a new user successfully', () => {
+      cy.writeInput('email', user.email)
+      cy.writeInput('fullName', user.fullName)
+      cy.writeInput('registerUserName', user.userName)
+      cy.writeInput('registerPassword', user.password)
+      cy.getButton('btnRegister')
+    })
+  })
+
   it('should visit register page and create a new user successfully', () => {
     registerNewUserTest.registerCorrectly()
   })
+
   it('should visit register page and type incorrectly data for inputs', () => {
     registerNewUserTest.registerIncorrectly()
   })
