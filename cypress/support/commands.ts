@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 Cypress.Commands.add('writeInput', (selector, text) => {
+    // cy.get(`[data-test=${selector}]`).type(text, {log:false})
     cy.get(`[data-test=${selector}]`).type(text)
 })
 
