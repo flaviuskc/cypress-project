@@ -1,5 +1,3 @@
-import CommonUtilities from './utils'
-
 class RegisterNewUserTest {
   private data: {
     email: string,
@@ -30,12 +28,11 @@ class RegisterNewUserTest {
   }
 }
 
-const commonUtilities = new CommonUtilities()
 const registerNewUserTest = new RegisterNewUserTest()
 
 describe('register user page', () => {
   beforeEach(() => {
-    commonUtilities.visitPage()
+    cy.visit('/')
     cy.get('[data-test="register"]').click()
   })
   it('should visit register page and create a new user successfully', () => {

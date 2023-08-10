@@ -6,6 +6,7 @@ declare global {
         interface Chainable {
             writeInput(selector:string, text:string): Cypress.Chainable<JQuery<HTMLElement>>
             getButton(selector:string): Cypress.Chainable<HTMLButtonElement>
+            login(user:string, password:string): Cypress.Chainable<JQuery<HTMLElement>>
         }
     }
 }
