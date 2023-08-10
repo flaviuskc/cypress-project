@@ -11,7 +11,6 @@ export default {
           "html"; true
           "json"; false
           "timestamp"; "mmddyyyy_HHMMss"
-          "charts"; true
         }
     }
   }
