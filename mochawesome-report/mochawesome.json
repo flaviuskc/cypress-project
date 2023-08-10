@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-10T10:53:14.450Z",
+    "end": "2023-08-10T10:53:17.619Z",
+    "duration": 3169,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5a98970-b8fa-4a9c-96d8-f8ce6a963859",
+      "title": "",
+      "fullFile": "cypress\\e2e\\RegisterUser.cy.ts",
+      "file": "cypress\\e2e\\RegisterUser.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c29c9f2-9b2b-4c3a-b811-1ca8de0f6712",
+          "title": "register user page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit register page and create a new user successfully",
+              "fullTitle": "register user page should visit register page and create a new user successfully",
+              "timedOut": null,
+              "duration": 2234,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registerNewUserTest.registerCorrectly();",
+              "err": {},
+              "uuid": "c8940850-f29c-4684-a554-96afc8a676bf",
+              "parentUUID": "8c29c9f2-9b2b-4c3a-b811-1ca8de0f6712",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should visit register page and type incorrectly data for inputs",
+              "fullTitle": "register user page should visit register page and type incorrectly data for inputs",
+              "timedOut": null,
+              "duration": 899,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registerNewUserTest.registerIncorrectly();",
+              "err": {},
+              "uuid": "e2138f7e-cde4-43a4-add2-144fef8399ed",
+              "parentUUID": "8c29c9f2-9b2b-4c3a-b811-1ca8de0f6712",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c8940850-f29c-4684-a554-96afc8a676bf",
+            "e2138f7e-cde4-43a4-add2-144fef8399ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3133,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
